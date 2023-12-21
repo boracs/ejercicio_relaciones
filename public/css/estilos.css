@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:100px;
+}
+
+nav{
+    margin-bottom: 50px;
+}
+
+#form_add_user{
+    margin: auto;
+    width: 40%;
+    min-width: 400px;
+}
+
+.cont_usuario{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
