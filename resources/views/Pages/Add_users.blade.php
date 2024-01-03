@@ -25,7 +25,7 @@
             <input  name="password"  type="password" class="form-control" id="exampleInputPassword1">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create User</button>
 </form>
 
 <hr/>
@@ -33,6 +33,12 @@
 
 
 <h1>Usuarios</h1>
+
+
+
+
+
+
 <div class="container text-center">
 @foreach($users as $user)
   <div class="row cont_usuario" >

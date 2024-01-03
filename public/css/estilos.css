@@ -23,3 +23,85 @@ nav{
     align-items: center;
     border-radius: 20px;
 }
+
+
+
+#cont_formulario_post{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(114, 221, 114, 0.404);
+   margin: auto;
+    width: 400px;
+    margin-bottom: 50PX;
+}
+
+#cont_see_all_posts{
+    margin: auto;
+    width: 140px;
+     height: 70px;
+}
+
+#cont_address{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgba(139, 185, 170, 0.384);
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+#cont_dir_ya_asignada{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgba(236, 150, 135, 0.384);
+    margin: auto;
+    width: 500px;
+}
+
+
+#btns_address_card{
+    display: flex;
+}
+
+
+#table {
+   border: 1px solid black;
+   margin: auto;
+}
+
+#table td {
+   padding: 25px;
+   text-align: center;
+ }
+ #table tr {
+    padding: 20px;
+    text-align: center;
+  }
+
+#cont_form_rel_add_us{
+    background-color: rgba(127, 255, 212, 0.308);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+}
+
+
+#cont_form_rel_add_us form{ 
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_post{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#cont_post_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -20,16 +20,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Add ssers</a>
+                    <a class="nav-link active" aria-current="page" href="{{route('add_users')}}">Index</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Edit users</a>
+                    <a class="nav-link" href="{{route('show_addreses')}}">Addresses</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
+                    <a class="nav-link" href="{{route('show_relation_address_user')}}">Rel_addr_users</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link "href="#">Posts</a>
+                    <a class="nav-link "href="{{route('show_posts')}}">Posts</a>
                     </li>
                 </ul>
                 </div>
@@ -44,15 +44,6 @@
     @yield('principal_section')
 
 </main>  
-
-
-
-<footer>
-    <div >
-        <h3>Exercises relations by Borja</h3>
-    </div>
-</footer>
-
 
 
 

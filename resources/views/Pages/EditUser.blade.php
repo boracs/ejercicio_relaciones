@@ -1,9 +1,12 @@
 @extends('layouts.Principal')
 
-@section('title','AddUsers')
+@section('title','Edit_User')
 
 
 @section('principal_section')
+
+
+<h3 class="text-center">Edditiin user {{$user->id}}</h3>
 
 
 <form id="form_add_user" method="POST" action="{{route('edit_user_2',['id'=>$user->id])}}">
