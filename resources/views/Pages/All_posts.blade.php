@@ -13,6 +13,10 @@
                     <h6 class="card-subtitle mb-2 text-body-secondary">User id: {{$post->user_id}}</h6>
                     <h5 class="card-title">{{$post->title}}</h5>
                     <p class="card-text">{{$post->content}}</p>
+                    @foreach($post->asignaturas as $asignatura)
+                    <p  class=" tags card-text">{{$asignatura->name}}</p>
+                    @endforeach
+
                         <div id="cont_post_btns">
 
                             <form action="{{route('delete_post',['id'=>$post->id])}}" method="POST">

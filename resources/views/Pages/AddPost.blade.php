@@ -28,7 +28,7 @@
         </div>
         <div>
             @foreach($asignaturas as $asignatura)
-            <label for="">{{$asignatura->name}}</label>   <input type="checkbox" name="asignatura" value="{{$asignatura->name}}">
+            <label for="">{{$asignatura->name}}</label>   <input type="checkbox" name="asignatura[]" value="{{$asignatura->id}}">
             @endforeach
         </div>
         <button type="submit" class="mt-3 btn btn-primary">Submit</button>
