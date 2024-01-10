@@ -14,6 +14,6 @@ class Address extends Model
     public function  user(){
         return $this->belongsTo("App\Models\User");
     }
-    public $timestamps = false;
+    //public $timestamps = false;
 
 }

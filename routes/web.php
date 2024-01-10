@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\UsserController;
 use \App\Http\Controllers\AddressController;
 use \App\Http\Controllers\PostController;
-
+use \App\Http\Controllers\AsignaturaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +71,12 @@ Route::get('/show_eddit_post/{id}', [PostController::class, 'show_eddit_post'])-
 Route::put('/eddit_post/{id}', [PostController::class, 'eddit_post'])->name('eddit_post');
 
 Route::delete('/delete_post/{id}', [PostController::class, 'delete_post'])->name('delete_post');
+
+
+/*-------------subjects/ <asignaturas-------------></asignaturas------------->*/
+
+Route::get('/show_asignaturas', [AsignaturaController::class, 'show_asignaturas'])->name('show_asignaturas');
+
+Route::post('/create_asignatura', [AsignaturaController::class, 'create_asignatura'])->name('create_asignatura');
+
+Route::delete('/delete_asignatura/{id}', [AsignaturaController::class, 'delete_asignatura'])->name('delete_asignatura');

@@ -105,3 +105,25 @@ nav{
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+
+#cont_form_asig{
+    margin: auto;
+    background-color: aquamarine;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+#muestra_asig{
+    background-color: bisque;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#muestra_asig p{
+  text-align: center;
+}

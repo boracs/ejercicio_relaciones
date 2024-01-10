@@ -31,6 +31,9 @@
                     <li class="nav-item">
                     <a class="nav-link "href="{{route('show_posts')}}">Posts</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link "href="{{route('show_asignaturas')}}">Asignaturas</a>
+                    </li>
                 </ul>
                 </div>
             </div>

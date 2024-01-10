@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Models\User;
 use \App\Models\Post;
+use \App\Models\Asignatura;
 
 class PostController extends Controller
 {
@@ -15,8 +16,9 @@ class PostController extends Controller
     }
 
     public function show_create_post(){
+        $asignaturas = Asignatura::all();
         $users = User::all();
-        return view('Pages.AddPost',['users'=>$users]);
+        return view('Pages.AddPost',['users'=>$users,'asignaturas' =>$asignaturas]);
     }
 
    public  function create_post(Request $request){

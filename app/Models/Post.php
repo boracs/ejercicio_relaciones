@@ -16,5 +16,13 @@ class Post extends Model
         return $this->belongsTo("App\Models\User");
     }
   
-    public $timestamps = false;
+   // public $timestamps = false;
+
+
+
+    
+    public function asignaturas()
+    {
+        return $this->belongsToMany(Asignatura::class);
+    }
 }

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('number');
             $table->integer('flat')->nullable();
             $table->string('letter');
-
+            $table->timestamps();
             $table->unsignedBigInteger('user_id')->unique()->nullable();
 
             $table->foreign('user_id')

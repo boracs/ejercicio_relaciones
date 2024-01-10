@@ -17,9 +17,7 @@
             <option value="{{$user->id}}">{{$user->name}}</option>
             @endforeach
         </select>
-        @if(isset($error_user_id))
-            <p>Debes seleccionar un usuario</p>
-        @endif
+    
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Titulo</label>
             <input name ="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -27,6 +25,11 @@
         <div class="form-floating">
             <textarea name ="content" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Post ontent</label>
+        </div>
+        <div>
+            @foreach($asignaturas as $asignatura)
+            <label for="">{{$asignatura->name}}</label>   <input type="checkbox" name="asignatura" value="{{$asignatura->name}}">
+            @endforeach
         </div>
         <button type="submit" class="mt-3 btn btn-primary">Submit</button>
     </form>
@@ -37,4 +40,7 @@
             <a href="{{route('show_posts')}}"><button type="submit" class="m-auto btn btn-success">See all Posts</button></a>
         </div>
 
+            @if(isset($error_user_id))
+            <p>Debes seleccionar un usuario</p>
+            @endif
 @endsection
