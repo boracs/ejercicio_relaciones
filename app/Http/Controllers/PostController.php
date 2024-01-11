@@ -75,9 +75,37 @@ class PostController extends Controller
         $post->title= $request['title'];
         $post->content= $request['content'];
         $post->save();
+        $post->asignaturas()->detach();
+        foreach($asignaturas as $asignatura){
+            $post->asignaturas()->attach($asignatura);
+        }
+        $post->save();
 
  
 
         return redirect()->route('show_posts'); 
     }
+
+    public function show_posts_order($id){
+
+        $posts= Post::where('user_id', $id)
+                    ->orderBy('title', 'asc')
+                    ->get();
+
+    return view('Pages.ShowPostsId',['posts'=>$posts]);
+    }
+
+
+
+    public function recent_posts(){
+
+       $ultimosPosts = Post::orderBy('created_at', 'desc')->take(12)->get();
+
+    return view('Pages.Posts_recientes',['posts'=>$ultimosPosts]);
+    }
+
+
+
+
+
 }

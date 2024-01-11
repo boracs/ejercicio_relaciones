@@ -61,6 +61,11 @@
         		<button type="button" class="btn btn-danger">Delete</button>
 			</a>
         </div>
+        <div class="col campo">
+			<a href="{{route('show_posts_order',['id'=>$user->id])}}">
+        		<button type="button" class="btn btn-success">Posts</button>
+			</a>
+        </div>
   </div>
 @endforeach
 </div>

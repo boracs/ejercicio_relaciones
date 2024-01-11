@@ -34,6 +34,9 @@
                     <li class="nav-item">
                     <a class="nav-link "href="{{route('show_asignaturas')}}">Asignaturas</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link "href="{{route('recent_posts')}}">Posts Recientes</a>
+                    </li>
                 </ul>
                 </div>
             </div>

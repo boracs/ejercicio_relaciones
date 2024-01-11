@@ -72,6 +72,10 @@ Route::put('/eddit_post/{id}', [PostController::class, 'eddit_post'])->name('edd
 
 Route::delete('/delete_post/{id}', [PostController::class, 'delete_post'])->name('delete_post');
 
+Route::get('/api/posts/{id}', [PostController::class, 'show_posts_order'])->name('show_posts_order');
+
+Route::get('/api/posts/recent', [PostController::class, 'recent_posts'])->name('recent_posts');
+
 
 /*-------------subjects/ <asignaturas-------------></asignaturas------------->*/
 
@@ -80,3 +84,4 @@ Route::get('/show_asignaturas', [AsignaturaController::class, 'show_asignaturas'
 Route::post('/create_asignatura', [AsignaturaController::class, 'create_asignatura'])->name('create_asignatura');
 
 Route::delete('/delete_asignatura/{id}', [AsignaturaController::class, 'delete_asignatura'])->name('delete_asignatura');
+
